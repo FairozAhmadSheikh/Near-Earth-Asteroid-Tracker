@@ -122,3 +122,10 @@
     maxDate.setDate(maxDate.getDate() + 60);
     startDateInput.value = getFormattedDate(today);
     startDateInput.max = getFormattedDate(maxDate);
+    
+    async function fetchNeoFeed(startDate, retries = 0) {
+      loadingDiv.classList.remove('hidden');
+      contentDiv.classList.add('hidden');
+      errorDiv.classList.add('hidden');
+      noNeoMessageEl.classList.add('hidden');
+      dataContainerEl.innerHTML = '';
