@@ -106,4 +106,7 @@
     const INITIAL_DELAY_MS = 1000;
 
     const getFormattedDate = (date) => date.toISOString().split('T')[0];
-    
+    const createLocalAnchorDate = (dateString) => {
+      const parts = dateString.split('-');
+      return new Date(parts[0], parts[1] - 1, parts[2]);
+    };
