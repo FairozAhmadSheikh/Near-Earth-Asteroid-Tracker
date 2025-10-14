@@ -110,3 +110,8 @@
       const parts = dateString.split('-');
       return new Date(parts[0], parts[1] - 1, parts[2]);
     };
+    const calculateEndDate = (startDateString) => {
+      const date = createLocalAnchorDate(startDateString);
+      date.setDate(date.getDate() + 6);
+      return getFormattedDate(date);
+    };
