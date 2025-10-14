@@ -115,5 +115,10 @@
       date.setDate(date.getDate() + 6);
       return getFormattedDate(date);
     };
-     const formatNumber = (num, decimals = 0) =>
+    const formatNumber = (num, decimals = 0) =>
       new Intl.NumberFormat('en-US', { maximumFractionDigits: decimals }).format(num);
+    const today = new Date();
+    const maxDate = new Date();
+    maxDate.setDate(maxDate.getDate() + 60);
+    startDateInput.value = getFormattedDate(today);
+    startDateInput.max = getFormattedDate(maxDate);
