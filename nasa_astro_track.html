@@ -90,7 +90,13 @@
       </p>
     </footer>
   </div>
-  
+
  <script>
     const API_KEY = "DEMO_KEY";
     const BASE_URL = "https://api.nasa.gov/neo/rest/v1/feed"; // ✅ Corrected endpoint
+    const loadingDiv = document.getElementById('loading');
+    const contentDiv = document.getElementById('neo-content');
+    const errorDiv = document.getElementById('error-message');
+    const errorDetails = document.getElementById('error-details');
+    const dataContainerEl = document.getElementById('neo-data-container');
+    
