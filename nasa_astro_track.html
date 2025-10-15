@@ -157,4 +157,16 @@
 
       if (dates.length === 0 || dates.every(date => neoObjects[date].length === 0)) {
         noNeoMessageEl.classList.remove('hidden');
-      } else 
+      } else {
+        dates.forEach((dateKey, index) => {
+          const asteroids = neoObjects[dateKey];
+          if (asteroids.length === 0) return;
+          totalAsteroids += asteroids.length;
+
+          const dateHeader = document.createElement('div');
+          dateHeader.className = 'date-section p-4 text-xl font-semibold flex justify-between items-center border-t border-gray-700';
+          dateHeader.innerHTML = `
+            <span>${new Date(dateKey).toDateString()} (${asteroids.length} approaches)</span>
+            <span id="arrow-${dateKey}" class="transform transition-transform duration-200">▼</span>
+          `;
+          dateHeader.setAttribute('data-target', `table-content-${dateKey}`);
