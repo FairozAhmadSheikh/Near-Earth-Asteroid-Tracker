@@ -137,3 +137,16 @@
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
         displayNeoFeed(data, startDate, endDate);
+        } catch (error) {
+        console.error("Fetch NeoWs error:", error);
+        if (retries < MAX_RETRIES) {
+          const delay = INITIAL_DELAY_MS * Math.pow(2, retries);
+          await new Promise(resolve => setTimeout(resolve, delay));
+          await fetchNeoFeed(startDate, retries + 1);
+        } else {
+          errorDetails.textContent = `Error: ${error.message}. This might be a temporary API or network issue.`;
+          errorDiv.classList.remove('hidden');
+          loadingDiv.classList.add('hidden');
+        }
+      }
+    }
