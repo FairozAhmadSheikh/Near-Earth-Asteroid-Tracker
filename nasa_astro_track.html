@@ -224,3 +224,11 @@
       loadingDiv.classList.add('hidden');
       contentDiv.classList.remove('hidden');
     }
+    fetchDataBtn.addEventListener('click', () => {
+      const selectedDate = startDateInput.value;
+      if (selectedDate) fetchNeoFeed(selectedDate);
+      else {
+        errorDetails.textContent = "Please select a valid start date.";
+        errorDiv.classList.remove('hidden');
+      }
+    });
