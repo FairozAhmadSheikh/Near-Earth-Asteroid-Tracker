@@ -170,3 +170,11 @@
             <span id="arrow-${dateKey}" class="transform transition-transform duration-200">▼</span>
           `;
           dateHeader.setAttribute('data-target', `table-content-${dateKey}`);
+          const tableContainer = document.createElement('div');
+          tableContainer.id = `table-content-${dateKey}`;
+          tableContainer.className = `table-row-content ${index > 0 ? 'collapsed' : ''}`;
+          dateHeader.onclick = () => {
+            tableContainer.classList.toggle('collapsed');
+            const arrowEl = document.getElementById(`arrow-${dateKey}`);
+            if (arrowEl) arrowEl.classList.toggle('rotate-180');
+          };
