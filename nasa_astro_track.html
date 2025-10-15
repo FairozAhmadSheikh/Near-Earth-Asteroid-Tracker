@@ -192,3 +192,14 @@
                 </thead>
                 <tbody class="divide-y divide-gray-800">
                   ${asteroids.map(neo => {
+                    const approach = neo.close_approach_data[0];
+                    const minKm = neo.estimated_diameter.kilometers.estimated_diameter_min;
+                    const maxKm = neo.estimated_diameter.kilometers.estimated_diameter_max;
+                    const avgMeters = ((minKm + maxKm) / 2) * 1000;
+                    const missDistance = formatNumber(parseFloat(approach.miss_distance.kilometers), 0);
+                    const closeApproachTime = new Date(approach.close_approach_date_full).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC' });
+                    const hazardText = neo.is_potentially_hazardous_asteroid
+                      ? `<span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-full bg-red-600 text-white">YES</span>`
+                      : `<span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-full bg-green-600 text-white">No</span>`;
+                    return `
+                    
