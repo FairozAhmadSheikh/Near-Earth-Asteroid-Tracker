@@ -178,3 +178,17 @@
             const arrowEl = document.getElementById(`arrow-${dateKey}`);
             if (arrowEl) arrowEl.classList.toggle('rotate-180');
           };
+          const tableHTML = `
+            <div class="overflow-x-auto">
+              <table class="min-w-full divide-y divide-gray-700">
+                <thead class="bg-gray-800">
+                  <tr>
+                    <th class="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Name</th>
+                    <th class="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider hidden sm:table-cell">Approach Time (UTC)</th>
+                    <th class="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Miss Distance (km)</th>
+                    <th class="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Size (m)</th>
+                    <th class="px-3 py-3 text-center text-xs font-medium text-gray-400 uppercase tracking-wider">Hazard</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-800">
+                  ${asteroids.map(neo => {
