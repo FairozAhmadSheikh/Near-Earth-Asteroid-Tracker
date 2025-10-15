@@ -217,3 +217,10 @@
           dataContainerEl.appendChild(dateHeader);
           dataContainerEl.appendChild(tableContainer);
         });
+        const firstArrow = document.getElementById(`arrow-${dates[0]}`);
+        if (firstArrow) firstArrow.classList.add('rotate-180');
+      }
+
+      loadingDiv.classList.add('hidden');
+      contentDiv.classList.remove('hidden');
+    }
