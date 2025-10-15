@@ -150,3 +150,11 @@
         }
       }
     }
+    function displayNeoFeed(data, startDate, endDate) {
+      const neoObjects = data.near_earth_objects;
+      const dates = Object.keys(neoObjects).sort();
+      let totalAsteroids = 0;
+
+      if (dates.length === 0 || dates.every(date => neoObjects[date].length === 0)) {
+        noNeoMessageEl.classList.remove('hidden');
+      } else 
