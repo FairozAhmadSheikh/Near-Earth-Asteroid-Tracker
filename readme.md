@@ -66,3 +66,12 @@ The app defaults to today’s date.
 You can choose any start date (up to 60 days ahead) to view a 7-day asteroid window.
 
 Click “Fetch Data” to load results.
+
+### 🧩 Technologies Used
+
+| Technology           | Purpose                           |
+| -------------------- | --------------------------------- |
+| **HTML5**            | Page structure                    |
+| **Tailwind CSS**     | Responsive and modern styling     |
+| **JavaScript (ES6)** | Fetches NASA data and updates DOM |
+| **NASA NeoWs API**   | Provides asteroid data            |
