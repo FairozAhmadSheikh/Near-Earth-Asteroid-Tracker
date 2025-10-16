@@ -54,4 +54,7 @@ No server or installation required.
 You can use VS Code’s Live Server extension or run:
 
 ```bash
-    python -m http.server```
+    python -m http.server
+```
+
+Then visit: http://localhost:8000
