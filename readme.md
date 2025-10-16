@@ -83,3 +83,5 @@ If you see:
 ```bash
 Failed to retrieve the asteroid data Error: HTTP error! status: 404
 ```
+It means NASA’s API is temporarily unavailable or rate-limited.
+Wait a few moments and try again — the app automatically retries 3 times with exponential backoff.
