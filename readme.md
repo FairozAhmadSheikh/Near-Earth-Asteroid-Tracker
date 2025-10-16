@@ -43,3 +43,15 @@ Then it dynamically renders all asteroids detected in that range, sorted by date
 ```bash
 git clone https://github.com/FairozAhmadSheikh/NASA-Asteroid-Tracker.git
 cd NASA-Asteroid-Tracker
+```
+
+### 2. Open the project
+
+Simply open the file index.html in your browser.
+No server or installation required.
+
+💡 If you prefer a local server:
+You can use VS Code’s Live Server extension or run:
+
+```bash
+    python -m http.server```
