@@ -8,3 +8,14 @@ Built with:
 - 🧠 **JavaScript (Fetch API)**
 
 ---
+## 🌌 Features
+
+- Fetches **real-time asteroid approach data** from NASA’s API.
+- Displays asteroid **name**, **closest approach time**, **miss distance**, **size**, and **hazard status**.
+- Interactive **collapsible date sections** for organized viewing.
+- Built-in **loading**, **error**, and **no-asteroid** states.
+- Responsive and fully client-side — **no backend required**.
+- Beautiful **dark/space-themed design** with smooth animations.
+- Includes **developer credits with GitHub and Instagram links.**
+
+---
