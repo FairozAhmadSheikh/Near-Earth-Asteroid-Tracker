@@ -58,3 +58,11 @@ You can use VS Code’s Live Server extension or run:
 ```
 
 Then visit: http://localhost:8000
+
+### 3. View Real-Time Data
+
+The app defaults to today’s date.
+
+You can choose any start date (up to 60 days ahead) to view a 7-day asteroid window.
+
+Click “Fetch Data” to load results.
