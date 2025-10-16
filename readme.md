@@ -85,3 +85,15 @@ Failed to retrieve the asteroid data Error: HTTP error! status: 404
 ```
 It means NASA’s API is temporarily unavailable or rate-limited.
 Wait a few moments and try again — the app automatically retries 3 times with exponential backoff.
+
+
+### 👨‍🚀 Developer
+
+
+Developed by [Fairoz Ahmad Sheikh](https://github.com/FairozAhmadSheikh)
+
+🌐 [Instagram](https://www.instagram.com/ahmmadferoz/)
+
+### 📜 License
+
+This project is open source and available under the MIT License.
