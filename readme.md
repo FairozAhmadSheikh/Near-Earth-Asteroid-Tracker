@@ -27,6 +27,8 @@ This app uses the public NASA **NeoWs API**:
 > https://api.nasa.gov/neo/rest/v1/feed
 
 It retrieves a 7-day range of data using:
-```
+
+```bash
 GET https://api.nasa.gov/neo/rest/v1/feed?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD&api_key=DEMO_KEY
+
 ```
