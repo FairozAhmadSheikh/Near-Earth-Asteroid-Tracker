@@ -75,3 +75,11 @@ Click “Fetch Data” to load results.
 | **Tailwind CSS**     | Responsive and modern styling     |
 | **JavaScript (ES6)** | Fetches NASA data and updates DOM |
 | **NASA NeoWs API**   | Provides asteroid data            |
+
+
+### ⚠️ Troubleshooting
+
+If you see:
+```bash
+Failed to retrieve the asteroid data Error: HTTP error! status: 404
+```
