@@ -19,3 +19,14 @@ Built with:
 - Includes **developer credits with GitHub and Instagram links.**
 
 ---
+
+## 🧠 How It Works
+
+This app uses the public NASA **NeoWs API**:
+
+> https://api.nasa.gov/neo/rest/v1/feed
+
+It retrieves a 7-day range of data using:
+```
+GET https://api.nasa.gov/neo/rest/v1/feed?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD&api_key=DEMO_KEY
+```
