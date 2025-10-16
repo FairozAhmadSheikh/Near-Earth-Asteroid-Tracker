@@ -32,3 +32,14 @@ It retrieves a 7-day range of data using:
 GET https://api.nasa.gov/neo/rest/v1/feed?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD&api_key=DEMO_KEY
 
 ```
+Then it dynamically renders all asteroids detected in that range, sorted by date.
+
+---
+
+## 🧰 Setup & Usage
+
+### 1. Clone this repository
+
+```bash
+git clone https://github.com/FairozAhmadSheikh/NASA-Asteroid-Tracker.git
+cd NASA-Asteroid-Tracker
